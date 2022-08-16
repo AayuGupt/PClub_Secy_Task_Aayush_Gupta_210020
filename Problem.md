@@ -1,7 +1,7 @@
 
 <div align="center">
   <b>SAVE THE PRINCESS</b> <br><br>
- time limit per test : $2$ seconds<br>
+ time limit per test : $1$ seconds<br>
 memory limit per test: $256$ megabytes<br>
 input: standard input<br>
 output: standard output<br><br><br>
@@ -20,7 +20,7 @@ Remember – Knight moves as per standard chess rules. Knight can only be placed
 If the prince can’t reach Princess following the above rule, then print $-1$.
 
 ### Input
-Each test contains multiple test cases. The first line contains the number of test cases $t$ $(1≤t≤10^4)$. The description of the test cases follows.
+Each test contains multiple test cases. The first line contains the number of test cases $t$ $(1≤t≤10^3)$. The description of the test cases follows.
 The first line of the test case consists of two integers $n,m$ $(1≤n,m≤100)$ .
 Then the next $n$ lines consist of a string of length $m$ . It represents an $n$ X $m$ grid forest.
 ‘.’ represents that that block/cell is empty. $Q$ represents the princess; $P$ represents the prince and $X$ represents the tree or the cell is blocked.
