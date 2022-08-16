@@ -23,7 +23,7 @@ First of all get the location of princess and prince. Store these values in form
   As we start with initial location of Knight for applying BFS. Put initial value in the Queue as $x = 0$ and { $i$ , $j$ } as intial location of prince.
   
   We take the first element of the queue. We store it in 'it' variable and remove it from the queue. Let the location is { $i$ , $j$ } as per this 'it' variable.
-  Then we apply DFS approach on this point. We make sure that the knight doesn't get out of the grid using $validate$ function created along with $solve$ function.
+  Then we apply BFS approach on this point. We make sure that the knight doesn't get out of the grid using $validate$ function created along with $solve$ function.
   There is one more condition to check whether the cell is empty to make the new move. We edit the $visited$ vector by setting the new { $i$ , $j$ } set as $1$ so that no position is crossed more than once.
   
   Important: By taking the front element of queue its easy to say that it has the least value of $x$ or the number of moves to reach a point { $i$ , $j$ }.
