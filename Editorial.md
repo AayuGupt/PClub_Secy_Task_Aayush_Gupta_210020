@@ -32,7 +32,8 @@ First of all get the location of princess and prince. Store these values in form
   Otherwise, If there are no possible ways to reach princess then the entire queue will become empty and while loop will end.
   And then it will return -1.
 
-
+  Time Complexity of Algorithm is O( $n * m$ ). As in while loop each element is pushed only once. So in worst condition the time complexity would become O( $n * m$ ).
+  
   ## Some Special Test Cases
  CASE 1: \
   &nbsp;&nbsp;&nbsp;6 6\
