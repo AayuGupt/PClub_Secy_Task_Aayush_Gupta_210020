@@ -1,7 +1,7 @@
 
 <div align="center">
   <b>SAVE THE PRINCESS</b> <br><br>
- time limit per test : $1$ seconds<br>
+ time limit per test : $1$ second<br>
 memory limit per test: $256$ megabytes<br>
 input: standard input<br>
 output: standard output<br><br><br>
