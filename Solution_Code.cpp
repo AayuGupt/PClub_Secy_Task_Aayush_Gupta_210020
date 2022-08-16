@@ -1,32 +1,15 @@
 #include<bits/stdc++.h>
-#include <vector>
-#include <math.h>
 using namespace std;
-#define vi vector<int>
-#define pb push_back
-#define p push
-#define sll stack<long long>
-#define qll queue<long long>
-#define vll vector<long long>
-#define st string
-#define vvll vector<vll>
-#define vstr vector <string>
-#define fori(n) for(ll i=0;i<n;i++)
-#define forj(n) for(int j=0;j<n;j++)
-#define fork(n) for(int k=0;k<n;k++)
-#define fori1(n) for(int i=1;i<n;i++)
-#define f(i,a,b) for(int i=a;i<=b;i++)s
-#define s(v) sort(v.begin(),v.end())
-#define ll long long
-#define mp   make_pair 
 
+#define ll long long
 
 bool validate(int i,int j,int n,int m){
     return i>=0 && i<n && j<m &&j>=0;
 }
 
-void solve(int n,int m){
-	// cout<<n<<" "<<m;
+void solve(){
+	int n,m;
+	cin>>n>>m;
     vector<string> board(n);
     pair<int,int> block;
     pair<int,int> white;
@@ -50,9 +33,7 @@ void solve(int n,int m){
     }
     vector<int> dx = {1,1,2,2,-1,-1,-2,-2};
     vector<int> dy = {2,-2,1,-1,2,-2,1,-1};
-   
   
-
     queue<pair<int,pair<int,int>>>pq;
     pq.push({0,{knight}});
     while(pq.size()){
@@ -75,27 +56,19 @@ void solve(int n,int m){
             }
         }
     }
-    // fori(n)out(visited[i]);
     cout<< -1<<"\n";
 
 }
 int main(){
     ios_base::sync_with_stdio(false);
     cin.tie(NULL); 
-#ifndef ONLINE_JUDGE
-    freopen("input.txt","r",stdin);
-    freopen("output.txt","w",stdout);
-#endif 
-     
+
     int t;
     cin >> t;
 
     while(t--){
-    	int n,m;
-    	cin>>n>>m;
-    	// cout<<n;
-    	
-        solve(n,m);
+
+        solve();
         
     }
 
