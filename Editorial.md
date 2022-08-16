@@ -35,25 +35,17 @@ First of all get the location of princess and prince. Store these values in form
   Time Complexity of Algorithm is O( $n * m$ ). As in while loop each element is pushed only once. So in worst condition the time complexity would become O( $n * m$ ).
   
   ## Some Special Test Cases
- CASE 1: \
-  &nbsp;&nbsp;&nbsp;6 6\
-  &nbsp;&nbsp;&nbsp;Q.P...\
-  &nbsp;&nbsp;&nbsp;......\
-  &nbsp;&nbsp;&nbsp;.X....\
-  &nbsp;&nbsp;&nbsp;......\
-  &nbsp;&nbsp;&nbsp;......\
-  &nbsp;&nbsp;&nbsp;...X..
+ CASE 1: <br>
+    ![alt text](https://github.com/AayuGupt/PClub_Secy_Task_Aayush_Gupta_210020/blob/main/Screenshot%202022-08-16%20160004.png)<br>
+
+
   
   Answer is 4. As P can't reach in 2 moves due to the blockage in grid. 
 
-  CASE 2: \
-  &nbsp;&nbsp;&nbsp;6 6\
-  &nbsp;&nbsp;&nbsp;Q.P...\
-  &nbsp;&nbsp;&nbsp;..X...\
-  &nbsp;&nbsp;&nbsp;.X....\
-  &nbsp;&nbsp;&nbsp;......\
-  &nbsp;&nbsp;&nbsp;......\
-  &nbsp;&nbsp;&nbsp;...X..
+  CASE 2: <br>
+  ![alt text](https://github.com/AayuGupt/PClub_Secy_Task_Aayush_Gupta_210020/blob/main/Screenshot%202022-08-16%20160137.png)<br>
+  
+
   
   Answer is -1 . As P can't reach Q due to the blockages in grid. 
 
