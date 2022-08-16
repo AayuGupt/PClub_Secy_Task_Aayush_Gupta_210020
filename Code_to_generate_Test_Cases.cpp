@@ -5,6 +5,8 @@ using namespace std;
 
 #define ll long long
 
+
+
 int main(){
     
 
@@ -12,8 +14,9 @@ int main(){
     srand(time(NULL));
 
     outdata.open("test_cases.dat");
-    // We can set the number of inputs we need
-    for(int tt=0;tt<1000;tt++){
+
+    // We can set the number of inputs we need by the follwing for loop
+    for(int tt=0;tt<100;tt++){
         int n, m;
 
         n = (rand()%(100 - 9)) + 8;
@@ -55,20 +58,11 @@ int main(){
 
         arr[x1][y1] = 'Q';
 
-        if(arr[x1+1][y1] != 'X')arr[x1+1][y1] = '0';
-        if(arr[x1+1][y1+1] != 'X')arr[x1+1][y1+1]  = '0';
-        if(arr[x1+1][y1-1] != 'X')arr[x1+1][y1-1] = '0';
-        if(arr[x1][y1+1] != 'X')arr[x1][y1+1]  = '0';
-        if(arr[x1][y1-1] != 'X')arr[x1][y1-1] = '0';
-        if(arr[x1-1][y1] != 'X')arr[x1-1][y1] = '0';
-        if(arr[x1-1][y1+1] != 'X')arr[x1-1][y1+1] = '0';
-        if(arr[x1-1][y1-1] != 'X')arr[x1-1][y1-1] = '0';
-
 
         x1 = (rand()%(n - 1));
         y1 = (rand()%(m - 1));
 
-        while(arr[x1][y1] == 'X' || arr[x1][y1] == '0')
+        while(arr[x1][y1] == 'X'||arr[x1][y1] == 'Q')
         {
             x1 = (rand()%(n - 1));
             y1 = (rand()%(m - 1));
@@ -77,24 +71,10 @@ int main(){
 
         arr[x1][y1] = 'P';
 
-
-         x1 = (rand()%(n - 1));
-        y1 = (rand()%(m - 1));
-
-        while(arr[x1][y1] == 'X' || arr[x1][y1] == '0' || arr[x1][y1] == 'P')
-        {
-            x1 = (rand()%(n - 1));
-            y1 = (rand()%(m - 1));
-
-        }
-
-        arr[x1][y1] = 'K';
-
         for(int i = 0; i< n ; ++i)
         {
             for(int j = 0 ; j<m ; ++j)
             {
-                if(arr[i][j] == '0')arr[i][j] = '.';
                 outdata<<arr[i][j];
             }
             outdata<<endl;
